@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  local-pg:
+    image: postgres:12.2
+    container_name: local-pg
+    ports:
+      - "5432:5432"
+    volumes:
+      - /var/lib/postgres
+    environment:
+      POSTGRES_DB: db
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 123456
