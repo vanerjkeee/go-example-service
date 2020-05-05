@@ -1,6 +1,11 @@
 ### Build
 ```
 build/run.sh
+migration.sql
+```
+### Run
+```
+go-example-service -config config/config.yaml
 ```
 
 ### Задача 
